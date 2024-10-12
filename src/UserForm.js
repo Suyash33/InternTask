@@ -23,7 +23,7 @@ const UserForm = () => {
     files.forEach(file => formData.append('images', file));
 
     try {
-      await axios.post('http://localhost:8000/api/upload', formData, {
+      await axios.post('https://interntask-521i.onrender.com/api/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
