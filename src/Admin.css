@@ -1,0 +1,63 @@
+/* Admin Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 900px; /* Limit maximum width */
+    margin: 0 auto;   /* Center the dashboard */
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .dashboard-heading {
+    text-align: center;
+    color: #007bff; /* Primary color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+    background-color: #fff; /* White background for the table */
+  }
+  
+  .th, .td {
+    padding: 12px 15px; /* Consistent padding */
+    text-align: left; /* Left align text */
+  }
+  
+  .th {
+    background-color: #007bff; /* Primary color for table headers */
+    color: #fff; /* White text color for headers */
+  }
+  
+  .td {
+    border-bottom: 1px solid #ddd; /* Light gray border for rows */
+  }
+  
+  .image-container {
+    display: flex;
+    gap: 10px; /* Space between images */
+  }
+  
+  .image {
+    width: 50px; /* Fixed width for images */
+    height: 50px; /* Fixed height for images */
+    object-fit: cover; /* Crop images to fill the box */
+    border-radius: 5px; /* Rounded corners for images */
+    border: 1px solid #ddd; /* Light border around images */
+  }
+  
+  /* Add a hover effect for table rows */
+  .table tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+  }
+  
