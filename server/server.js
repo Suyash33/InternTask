@@ -10,7 +10,12 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+	cors({
+		origin:"https://intern-task-l3dhxgsds-suyash-budhes-projects.vercel.app",
+		credentials:true,
+	})
+) 
 app.use(express.json());
 
 // Start the server
