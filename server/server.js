@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(
 	cors({
-		origin:"https://intern-task-l3dhxgsds-suyash-budhes-projects.vercel.app",
+		origin:"https://intern-task-a7ko.vercel.app/",
 		credentials:true,
 	})
 ) 
