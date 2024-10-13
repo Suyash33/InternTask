@@ -24,6 +24,13 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
+app.get("/", (req, res) => {
+	return res.json({
+		success:true,
+		message:'Your server is up and running....'
+	});
+});
+
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
