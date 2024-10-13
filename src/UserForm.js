@@ -21,7 +21,6 @@ const UserForm = () => {
 
     // Append all selected files to FormData
     files.forEach(file => formData.append('images', file));
-
     try {
       await axios.post('https://interntask-521i.onrender.com/api/upload', formData, {
         headers: {
